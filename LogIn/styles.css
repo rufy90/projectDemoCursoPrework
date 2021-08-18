@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+/*CSS for header*/
+.header{
+    background-color: #21c08b;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+}
+.header__img{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.header__menu{
+    margin-right: 30px;
+}
+.header__menu ul{
+    display: none;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -16px;
+}
+.header__menu:hover ul, ul:hover{
+    display: block;
+}
+.header__menu li{
+    margin: 10px 0px;
+}
+.header__menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+.header__menu li a:hover{
+    text-decoration: underline;
+}
+.header__menu--profile{
+    display: flex;
+    margin-right: 8px;
+    cursor: pointer;
+    align-items: center;
+}
+.header__menu--profile img{
+    margin-right: 8px;
+    width: 40px;
+}
+.header__menu--profile p{
+    margin: 0px;
+}
+
+/* CSS for login */
+.login{
+    background: linear-gradient(#21c08b, #ab88ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid;
+    border-color: #fff;
+    border-radius: 40px;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--rememberMe{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__container--rememberMe a{
+    text-decoration: none;
+    color: #fff;
+}
+.login__container--rememberMe a:hover{
+    text-decoration: underline;
+}
+
+.login__container--socialMedia div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.login__container--socialMedia img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.login__container--register a{
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.login__container--register a:hover{
+    text-decoration: underline;
+}
+.input{
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid #fff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+::placeholder{
+    color: #fff;
+}
+.button{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+/* CSS for footer*/
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100px;
+    width: 100%;
+    background: #ab88ff;
+}
+.footer a{
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    padding-right: 30px;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
