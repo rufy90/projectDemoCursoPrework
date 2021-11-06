@@ -19,15 +19,15 @@ h1{
     text-transform: uppercase;
 }
 .container{
-    height: 60vh;
-    width: 60vw;
+    height: 900px;
+    width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 #board{
-    width: 60vh;
+    width: 90vh;
     display: flex;
     flex-wrap: wrap;
     font-size: 100px;

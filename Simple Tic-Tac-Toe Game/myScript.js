@@ -25,7 +25,7 @@ const drawBoard = () => {
     });
 };
 
-//Defiune a few more variables
+//Define a few more variables
 const spaces = [];
 const tick_circle = '0';
 const tick_x = 'X';
