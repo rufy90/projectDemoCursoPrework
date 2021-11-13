@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="figuras.css">
+    <title>Geometric Shapes</title>
+</head>
+<body>
+    <header>
+        <h1>Geometric Shapes</h1>
+        <p>Firts work of practice JavaScritp course...!</p>
+    </header>
+
+    <section class="box cuadrado">
+        <h2>Calc the area and perimeter of a square</h2>
+        <form>
+            <label for="inputCuadrado">Type the the measure of each square side</label>
+            <input id="inputCuadrado" type="number">
+            <button type="button" onclick="calcAreaC()">Calc area</button>
+            <button type="button" onclick="calcPerimetroC()">Calc perimeter</button>
+        </form>
+    </section>
+
+    <section class="box triangulo">
+        <h2>Calc the area and perimeter of a triangle</h2>
+        <form>
+            <label for="inputLado1">Type the the measure of each triangle side</label>
+            <div class="radioButton">
+                <label for="perimeter" onchange="update()"><input type="radio" id="perimeter">Perimeter</label>
+                <label for="area" onchange="update()"><input type="radio" id="area">Area</label>
+            </div>
+
+            <input id="inputLado1" type="number" placeholder="lado 1" disabled>
+            <input id="inputLado2" type="number" placeholder="lado 2" disabled>
+            <input id="inputBase" type="number" placeholder="base" disabled>
+            <input id="inputAltura" type="number" placeholder="altura" disabled>
+            <button type="button" onclick="calcPerimetroT()">Calc perimetro</button>
+            <button type="button" onclick="calcAreaT()">Calc area</button>
+        </form>
+    </section>
+
+    <section class="box circulo"> 
+        <h2>Calc area, diameter and perimeter of a circle</h2>
+        <form>
+            <label for="inputRadio">Type the the measure of radio circle</label>
+            <input id="inputRadio" type="number">
+            <button type="button" onclick="calcAreaCircle()">Calc area</button>
+            <button type="button" onclick="calcDiameterCircle()">Calc diameter</button>
+            <button type="button" onclick="calcCircunference()">Calc perimeter</button>
+        </form>
+    </section>
+
+
+<script src="./figuras.js"></script>
+
+</body>
+</html>
