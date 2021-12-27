@@ -6,8 +6,9 @@
 body{
     background: #FEF5ED;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto auto;
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: 1fr auto auto auto 1fr;
+    grid-template-rows: auto auto auto;
     gap: 10px;
 }
 header{
@@ -27,11 +28,10 @@ section{
     background: #ADC2A9;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: 600px;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
 }
 .triangulo{
@@ -40,11 +40,10 @@ section{
     background: #ADC2A9;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: 600px;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
 }
 .circulo{
@@ -53,19 +52,29 @@ section{
     background: #ADC2A9;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: 600px;
-    padding: 20px;
+    padding: 30px;
+    border-radius: 15px;
+}
+.isoceles{
+    grid-column: 3 / 4;
+    grid-row: 3;
+    background: #ADC2A9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+    padding: 30px;
     border-radius: 15px;
 }
 form{
     display: flex;
     flex-direction: column;
-}
-form * {
-    margin-bottom: 10px;
+    height: 350px;
+    justify-content: space-evenly;
 }
 input{
     width: 100%;
@@ -82,6 +91,7 @@ button{
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 12px;
 }
 .radioButton{
     display: flex;
@@ -117,5 +127,9 @@ button{
     .circulo{
         grid-column: 1;
         grid-row: 4;
+    }
+    .isoceles{
+        grid-column: 1;
+        grid-row: 5;
     }
 }

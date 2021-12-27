@@ -127,6 +127,7 @@ function calcPerimetroT() {
     const value3 = input3.value;
     const perimetroTriangulo = perimetroT(value1, value2, value3);
     alert(perimetroTriangulo);
+    location.reload();
 }
 function calcAreaT() {
     const input1 = document.getElementById("inputBase");
@@ -135,6 +136,7 @@ function calcAreaT() {
     const value2 = input2.value;
     const areaTriangulo = areaT(value1, value2);
     alert(areaTriangulo);
+    location.reload();
 }
 
 //CIRCLE
@@ -155,6 +157,25 @@ function calcAreaCircle() {
     const value1 = input1.value;
     const areaCircle = areaCirc(value1);
     alert(areaCircle);
+    location.reload();
+}
+
+//CALCULATE ISOCELES TRIANGLE HEIGTH 
+function calcHeigth(){
+    const input1 = document.getElementById("inputLadoIsoceles1");
+    const lado1 = input1.value;
+    const input2 = document.getElementById("inputLadoIsoceles2");
+    const lado2 = input2.value;
+    const inputBase = document.getElementById("inputBaseIsoceles");
+    const base1 = inputBase.value;
+
+    if (lado1 != lado2) {
+        alert('The side 1 and 2 are not equals, must to be the same!')
+    }else{
+        const heigth = (Math.sqrt(lado1 ** 2) - Math.sqrt(base1 ** 2) / 4);
+        alert(`The heigth is: "${heigth}"`)
+    }
+    
 }
 
 //UPDATE()
@@ -170,11 +191,13 @@ function update() {
         value1.disabled = false;
         value2.disabled = false;
         value3.disabled = false;
-        document.getElementById("area").disabled=true;
+        document.getElementById("area").disabled = true;
+        document.getElementById("button2").disabled = true;
     }
     if (input2.checked) {
         value3.disabled = false;
         value4.disabled = false;
-        document.getElementById("perimeter").disabled=true;
+        document.getElementById("perimeter").disabled = true;
+        document.getElementById("button1").disabled = true;
     }
 }

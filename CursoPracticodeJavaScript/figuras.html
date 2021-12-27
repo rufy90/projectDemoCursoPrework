@@ -32,12 +32,12 @@
                 <label for="area" onchange="update()"><input type="radio" id="area">Area</label>
             </div>
 
-            <input id="inputLado1" type="number" placeholder="lado 1" disabled>
-            <input id="inputLado2" type="number" placeholder="lado 2" disabled>
+            <input id="inputLado1" type="number" placeholder="side 1" disabled>
+            <input id="inputLado2" type="number" placeholder="side 2" disabled>
             <input id="inputBase" type="number" placeholder="base" disabled>
             <input id="inputAltura" type="number" placeholder="altura" disabled>
-            <button type="button" onclick="calcPerimetroT()">Calc perimetro</button>
-            <button type="button" onclick="calcAreaT()">Calc area</button>
+            <button type="button" id="button1" onclick="calcPerimetroT()">Calc perimetro</button>
+            <button type="button" id="button2" onclick="calcAreaT()">Calc area</button>
         </form>
     </section>
 
@@ -52,6 +52,16 @@
         </form>
     </section>
 
+    <section class="box isoceles">
+        <h2>Calc the heigth of a isoceles triangle</h2>
+        <form>
+            <label for="inputLadoIsoceles1">Type the the measure of each triangle side</label>
+            <input id="inputLadoIsoceles1" type="number" placeholder="side 1">
+            <input id="inputLadoIsoceles2" type="number" placeholder="side 2">
+            <input id="inputBaseIsoceles" type="number" placeholder="base">
+            <button type="button" id="button1" onclick="calcHeigth()">Calc heigth</button>
+        </form>
+    </section>
 
 <script src="./figuras.js"></script>
 
